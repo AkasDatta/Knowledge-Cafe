@@ -1,0 +1,26 @@
+.card-container hr{
+    border: 1px solid rgba(17, 17, 17, 0.15);
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.banner-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.banner-container button {
+    border-radius: 8px;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: rgba(96, 71, 236, 0.1);
+    border: 1px solid #6047EC;
+    cursor: pointer;
+    color: #6047EC;
+    font-family: 'Exo 2';
+    font-weight: 700;
+    font-size: 24px;
+    transition: border-color 0.25s;
+  }

@@ -5,7 +5,8 @@
     align-items: center;
     padding-left: 100px;
     padding-right: 100px;
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .header h2{
     font-family: 'Exo 2';
