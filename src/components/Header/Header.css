@@ -1,0 +1,20 @@
+.header{
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 50px;
+}
+.header h2{
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+}
+.header img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
