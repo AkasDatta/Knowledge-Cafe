@@ -14,7 +14,7 @@ const Card = () => {
             <hr />
             <div className="banner-container">
                 <div className='products-container'>
-                    <h2>jdijifj {products.length}</h2>
+                    <h2>Total products: {products.length}</h2>
                 </div>
                 <div className='cart-container'>
                     <button>Spent time on road: min</button>
