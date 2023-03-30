@@ -1,0 +1,56 @@
+.product{
+    width: 845px;
+    height: 821px;
+}
+.product img{
+    height: 450px;
+    width: 845px;
+    border-radius: 8px;
+}
+.productRead{
+    display: flex;
+    justify-content: space-between;
+}
+.product-name-sizing{
+    display: flex;
+    justify-content: space-between;
+}
+.productRead img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+.product h5{
+    font-family: 'Exo 2';
+    font-size: 24px;
+    margin-left: 30px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+.product .date{
+    font-family: 'Exo 2';
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 30px;
+    color: rgba(17, 17, 17, 0.6);
+}
+.timing{
+    margin-top: 50px;
+    font-family: 'Exo 2';
+    font-weight: 500;
+    font-size: 20px;
+    text-align: right;
+    color: rgba(17, 17, 17, 0.6);
+}
+.product h1{
+    font-family: 'Exo 2';
+    font-size: 40px;
+}
+p{
+    font-family: 'Exo 2';
+    font-size: 20px;
+    color: rgba(17, 17, 17, 0.6);
+}

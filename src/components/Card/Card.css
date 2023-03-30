@@ -2,6 +2,7 @@
     border: 1px solid rgba(17, 17, 17, 0.15);
     margin-left: 100px;
     margin-right: 100px;
+    margin-bottom: 25px;
 }
 .banner-container{
     display: grid;
@@ -23,4 +24,15 @@
     font-weight: 700;
     font-size: 24px;
     transition: border-color 0.25s;
-  }
+}
+.banner-container button:hover {
+    border-color: green;
+}
+.banner-container button:focus, button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+.products-container{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr;  */
+    gap: 45px;
+}
