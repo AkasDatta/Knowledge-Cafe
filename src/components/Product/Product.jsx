@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 import './Product.css';
 
 const Product = (props) => {
@@ -16,7 +18,9 @@ const Product = (props) => {
                     </div>
                 </div>
                 <div>
-                    <p className='timing'>{timing} min read </p>
+                    <p className='timing'>
+                        {timing} min read <FontAwesomeIcon icon={faBookmark} />
+                    </p>
                 </div>
             </div>
             <h1>{title}</h1>

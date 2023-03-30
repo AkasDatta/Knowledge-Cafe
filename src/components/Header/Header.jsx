@@ -7,6 +7,9 @@ const Header = () => {
             <h2>Programming-cafe</h2>
             <div>
                 <img src={logo} alt="" />  
+                <a href="/home"></a>
+                <a href="/blog"></a>
+                <a href="/contact"></a>
             </div>
         </nav>
     );

@@ -24,6 +24,12 @@ const Card = () => {
                 </div>
                 <div className='cart-container col-md-4'>
                     <button>Spent time on road:{} min</button>
+                    <div className='bookmark'>
+                        <h2>Bookmarked Blogs: </h2>
+                        <div className='bookmark-title'>
+                            <p>master Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed consequuntur neque esse non</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

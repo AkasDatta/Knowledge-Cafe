@@ -24,6 +24,7 @@
     font-weight: 700;
     font-size: 24px;
     transition: border-color 0.25s;
+    margin-bottom: 20px;
 }
 .banner-container button:hover {
     border-color: green;
@@ -33,6 +34,23 @@
 }
 .products-container{
     display: grid;
-    /* grid-template-columns: 1fr 1fr;  */
     gap: 45px;
+}
+.bookmark{
+    background: rgba(17, 17, 17, 0.05);
+    border-radius: 8px;
+    padding: 20px;
+}
+.bookmarked h2{
+    font-family: 'Exo 2';
+    font-size: 24px;
+}
+.bookmark-title{
+    background-color: white;
+    border-radius: 8px;
+}
+.bookmark-title p{
+    padding: 10px;
+    color: black;
+    font-size: 18px;
 }
