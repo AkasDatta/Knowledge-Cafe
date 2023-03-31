@@ -4,8 +4,11 @@ import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 import './Product.css';
 
 const Product = (props) => {
-    console.log(props.product);
+    // console.log(props.product);
     const {id, name, title, date, hashtag, coverImg, profileImg, timing } = props.product;
+    const handleAddCard = props.handleAddCard;
+
+
     return (
         <div className='product'>
             <img src={coverImg} alt="" />
@@ -19,7 +22,9 @@ const Product = (props) => {
                 </div>
                 <div>
                     <p className='timing'>
-                        {timing} min read <FontAwesomeIcon icon={faBookmark} />
+                        {timing} min read 
+                        <FontAwesomeIcon className='icon'
+                        onClick={() => handleAddCard(props.product)} icon={faBookmark} />
                     </p>
                 </div>
             </div>

@@ -53,3 +53,10 @@ p{
     font-size: 20px;
     color: rgba(17, 17, 17, 0.6);
 }
+.timing .icon{
+    color: rgb(150, 147, 147);
+    margin-left: 10px;
+}
+.timing .icon:hover{
+    color: rgb(75, 75, 75);
+}
