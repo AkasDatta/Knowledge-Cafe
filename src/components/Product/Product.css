@@ -46,7 +46,7 @@
 }
 .product h1{
     font-family: 'Exo 2';
-    font-size: 40px;
+    font-size: 35px;
 }
 p{
     font-family: 'Exo 2';
@@ -64,7 +64,7 @@ p{
     font-weight: 500;
     color: #6047EC;
     font-weight: bold;
-    cursor: pointer
+    cursor: pointer;
   }
 .read p:hover {
     color: #1f278e;

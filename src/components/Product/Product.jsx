@@ -1,6 +1,7 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBookmark } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBookmark } from '@fortawesome/free-solid-svg-icons';
+// import { ToastContainer, toast } from 'react-toastify';
 import './Product.css';
 
 const Product = (props) => {
@@ -9,6 +10,12 @@ const Product = (props) => {
     const handleAddCard = props.handleAddCard;
     //  
     const handleAddToStory = props.handleAddToStory;
+
+
+    //
+    // const handleAlart = () =>{
+    //     toast("Wow so easy!");
+    // }
 
     return (
         <div className='product'>
@@ -29,13 +36,14 @@ const Product = (props) => {
                     </p>
                 </div>
             </div>
-            <h1>{title}</h1>
+            <h1 className='mt-4'>{title}</h1>
             <p>{hashtag}</p>
 
             <div className='read'>
                 <p onClick={() => handleAddToStory(props.product)}><u>Mark as read</u></p> 
             </div>
         </div>
+        
     );
 };
 
