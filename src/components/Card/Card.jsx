@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Product from '../Product/Product';
 import './Card.css'
 import Title from '../Title/Title';
+import Story from '../Story/Story';
 const Card = () => {
     const [products, setProducts] = useState([]);
     const [title, setTitle] = useState([]);
@@ -41,7 +42,7 @@ const Card = () => {
                     }
                 </div>
                 <div className='cart-container'>
-                    <button>Spent time on road:{story.length} min</button>
+                  <Story story={story}></Story>
                     <div className='bookmark'>
                         <Title title={title}></Title>
                     </div>
