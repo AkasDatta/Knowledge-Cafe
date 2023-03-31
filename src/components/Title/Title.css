@@ -1,0 +1,9 @@
+.bookmark-title{
+    background-color: white;
+    border-radius: 8px;
+}
+.bookmark-title p{
+    padding: 10px;
+    color: black;
+    font-size: 18px;
+}

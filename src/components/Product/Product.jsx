@@ -7,7 +7,8 @@ const Product = (props) => {
     // console.log(props.product);
     const {id, name, title, date, hashtag, coverImg, profileImg, timing } = props.product;
     const handleAddCard = props.handleAddCard;
-
+    //  
+    const handleAddToStory = props.handleAddToStory;
 
     return (
         <div className='product'>
@@ -30,7 +31,10 @@ const Product = (props) => {
             </div>
             <h1>{title}</h1>
             <p>{hashtag}</p>
-            <a href="">Mark as read</a>
+
+            <div className='read'>
+                <p onClick={() => handleAddToStory(props.product)}><u>Mark as read</u></p> 
+            </div>
         </div>
     );
 };

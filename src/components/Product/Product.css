@@ -60,3 +60,12 @@ p{
 .timing .icon:hover{
     color: rgb(75, 75, 75);
 }
+.read p{
+    font-weight: 500;
+    color: #6047EC;
+    font-weight: bold;
+    cursor: pointer
+  }
+.read p:hover {
+    color: #1f278e;
+  }
