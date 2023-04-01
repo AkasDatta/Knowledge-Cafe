@@ -13,18 +13,12 @@ function App() {
 
   return (
     <div>
-      <div className="App m-auto">
+      <div className="App">
         <Header></Header>
+        <Card></Card>
+        <ToastContainer></ToastContainer>
+        <Blog></Blog>
       </div>
-      <div className="row">
-        <div>
-          <Card></Card>
-        </div>
-        <div>
-          <ToastContainer></ToastContainer>
-        </div>
-      </div>
-      <Blog></Blog>
     </div>
 
   

@@ -11,7 +11,6 @@ const Product = (props) => {
     const handleAddCard = props.handleAddCard;
     //  
     const handleAddToStory = props.handleAddToStory;
-    //////////////////
     //
     const [clicked, setClicked] = useState(false);
 
@@ -20,17 +19,8 @@ const Product = (props) => {
         if (clicked) {
           // Add bookmark
           handleAddCard(props.product);
-    
-        //   // Show toast alert
-        //   toast('Alert!!! You Have Already Bookmarked This Blog');
         }
       }, [clicked]);
-
-      //
-    //   const handleAddCard = () => {
-    //     // Set clicked state to true on single click
-    //     setClicked(true);
-    //   };
     
       const handleDoubleClick = () => {
         // Set clicked state to false on double click
@@ -39,15 +29,10 @@ const Product = (props) => {
         // Show toast alert
         toast('Alert!!! You Have Already Bookmarked This Blog');
       };
-////////////////////
-
-    // const handleAlert = () =>{
-    //     toast("Wow so easy!");
-    // }
-
+//
     return (
         <div className='product'>
-            <img src={coverImg} alt="" />
+            <img className='img-fluid rounded' src={coverImg} alt="" />
             <div className="productRead">
                 <div className="product-name-sizing">
                     <img src={profileImg} alt="" />
