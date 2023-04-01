@@ -17,7 +17,7 @@ const Blog = () => {
                     <b>const [state, setState] = useState(initialValue);</b>
                     </p>
 
-                    <h5>3: What else does UseEffect do besides loading data?</h5>
+                    <h5>3: What else does UseEffect do besides loading or fetching data?</h5>
                     <p>Ans: UseEffects do a lot more than just loading data. It is described below: <br />
                     1. live filtering <br />
                     2. validating input field <br />
@@ -25,6 +25,7 @@ const Blog = () => {
                     4. update paragraph list on fetched API data update <br />
                     5. updating fetched API data to get BTC updated price
                     </p>
+                    
                     <h5>4: How does React work?</h5>
                     <p>Ans: React is a JavaScript library that helps you create user interfaces. <br />
                     Generally, React works by dividing your application into a hierarchical list of components and state. Each component renders a separate part or part, which is done through a lifecycle function. A component is controlled through its state and props, and when the state or props change, React automatically renders the component and technically updates the interface. Overall, React takes care of updating the user interface efficiently and provides you with tools to manage state, props, and lifecycle methods.

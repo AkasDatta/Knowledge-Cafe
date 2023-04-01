@@ -16,11 +16,11 @@ function App() {
       <div className="App m-auto">
         <Header></Header>
       </div>
-      <div className="main row">
-        <div className=" col-md-8">
+      <div className="row">
+        <div>
           <Card></Card>
         </div>
-        <div className=" col-md-4">
+        <div>
           <ToastContainer></ToastContainer>
         </div>
       </div>

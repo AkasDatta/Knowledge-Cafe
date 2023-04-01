@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookmark } from '@fortawesome/free-solid-svg-icons';
-// import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './Product.css';
 
 const Product = (props) => {
@@ -10,10 +11,37 @@ const Product = (props) => {
     const handleAddCard = props.handleAddCard;
     //  
     const handleAddToStory = props.handleAddToStory;
-
+    //////////////////
+    //
+    const [clicked, setClicked] = useState(false);
 
     //
-    // const handleAlart = () =>{
+    useEffect(() => {
+        if (clicked) {
+          // Add bookmark
+          handleAddCard(props.product);
+    
+        //   // Show toast alert
+        //   toast('Alert!!! You Have Already Bookmarked This Blog');
+        }
+      }, [clicked]);
+
+      //
+    //   const handleAddCard = () => {
+    //     // Set clicked state to true on single click
+    //     setClicked(true);
+    //   };
+    
+      const handleDoubleClick = () => {
+        // Set clicked state to false on double click
+        setClicked(false);
+        
+        // Show toast alert
+        toast('Alert!!! You Have Already Bookmarked This Blog');
+      };
+////////////////////
+
+    // const handleAlert = () =>{
     //     toast("Wow so easy!");
     // }
 
@@ -32,7 +60,7 @@ const Product = (props) => {
                     <p className='timing'>
                         {timing} min read 
                         <FontAwesomeIcon className='icon'
-                        onClick={() => handleAddCard(props.product)} icon={faBookmark} />
+                        onClick={() => handleAddCard(props.product)} onDoubleClick={handleDoubleClick} icon={faBookmark} />
                     </p>
                 </div>
             </div>
