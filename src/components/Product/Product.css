@@ -1,11 +1,5 @@
-.product{
-    width: 845px;
-    height: 821px;
-}
 .product img{
-    height: 450px;
-    width: 845px;
-    /* border-radius: 8px; */
+    width: 100%;
 }
 .productRead{
     display: flex;

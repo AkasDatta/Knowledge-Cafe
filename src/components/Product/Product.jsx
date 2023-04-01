@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookmark } from '@fortawesome/free-solid-svg-icons';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import './Product.css';
+
 
 const Product = (props) => {
     // console.log(props.product);
@@ -12,27 +11,12 @@ const Product = (props) => {
     //  
     const handleAddToStory = props.handleAddToStory;
     //
-    const [clicked, setClicked] = useState(false);
-
-    //
-    useEffect(() => {
-        if (clicked) {
-          // Add bookmark
-          handleAddCard(props.product);
-        }
-      }, [clicked]);
-    
-      const handleDoubleClick = () => {
-        // Set clicked state to false on double click
-        setClicked(false);
-        
-        // Show toast alert
-        toast('Alert!!! You Have Already Bookmarked This Blog');
-      };
-//
+   
     return (
         <div className='product'>
-            <img className='img-fluid rounded' src={coverImg} alt="" />
+            <div>
+                 <img className='banner-img rounded img-fluid' src={coverImg} alt="" />
+            </div>
             <div className="productRead">
                 <div className="product-name-sizing">
                     <img src={profileImg} alt="" />
@@ -45,7 +29,7 @@ const Product = (props) => {
                     <p className='timing'>
                         {timing} min read 
                         <FontAwesomeIcon className='icon'
-                        onClick={() => handleAddCard(props.product)} onDoubleClick={handleDoubleClick} icon={faBookmark} />
+                        onClick={() => handleAddCard(props.product)} icon={faBookmark} />
                     </p>
                 </div>
             </div>
